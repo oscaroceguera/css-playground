@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+}
+h1 {
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  text-transform: uppercase;
+  background-clip: text;
+  color: transparent;
+}
+h2 {
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  text-transform: uppercase;
+  background-clip: border-box;
+}
+h3 {
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  text-transform: uppercase;
+  background-clip: padding-box;
+}
+h4 {
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  text-transform: uppercase;
+  background-clip: content-box;
+}
+ul {
+  color: gray;
+}
+
+li:not(:last-child)::after {
+  content: ",";
+}
+
+.hyphens-none {
+  border: 1px dotted red;
+  color: gray;
+  width: 60px;
+  hyphens: none;
+  margin-top: 10px;
+}
+.hyphens-manual {
+  border: 1px dotted red;
+  color: gray;
+  width: 70px;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  margin-top: 10px;
+}
+.hyphens-auto {
+  border: 1px dotted red;
+  color: gray;
+  width: 60px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  margin-top: 10px;
+}

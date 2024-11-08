@@ -1,0 +1,13 @@
+/* html {
+  background: blueviolet;
+  color: white;
+} */
+
+@media print {
+  * {
+    background-color: transparent;
+    color: red;
+    box-shadow: none;
+    text-shadow: none;
+  }
+}
